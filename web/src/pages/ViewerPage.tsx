@@ -10,13 +10,19 @@ export const ViewerPage: FC = () => {
   useEffect(() => {
     let stillMounted = true;
     const viewer = new GaussianSplat3D.Viewer(
+      // rootElement
       viewerElement.current as any,
+      // cameraUp
       [0, -1, -0.17],
+      // initialCameraPos
       [-5, -1, -1],
-      [1, 1, 0],
+      // initialCameraLookAt
+      // {x: -4.999999999999983, y: -0.9999999999999978, z: -0.9999999999999974}
+      [-5, -1, 0],
       null,
       10
     );
+    window.viewer = viewer;
     viewer.init();
     viewer.loadFile(`/api/splat/${sessionId}.splat`).then(() => {
       if (!stillMounted) return;

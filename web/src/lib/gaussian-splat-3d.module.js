@@ -2995,7 +2995,7 @@ class Viewer {
 
   update(ts) {
     if (this.selfDrivenMode && this.running) {
-      console.log("I'm called");
+      // console.log("I'm called");
       requestAnimationFrame(this.selfDrivenUpdateFunc);
     }
     this.controls.update();
