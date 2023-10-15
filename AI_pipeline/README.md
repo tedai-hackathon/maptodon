@@ -47,7 +47,6 @@ This README guides you through the process of setting up your working environmen
 We will begin by installing the required Python libraries, including `plyfile`, `Pillow`, `pycolmap`, and `mediapy`. Execute the following commands:
 
 ```python
-print("Installing Python libraries...\n")
 !pip install plyfile Pillow==9.5.0 pycolmap mediapy
 ```
 
@@ -56,7 +55,6 @@ print("Installing Python libraries...\n")
 COLMAP and FFmpeg are essential system packages for this setup. You can install them using the following commands:
 
 ```python
-print("\nInstalling system packages for COLMAP...\n")
 !apt-get install colmap ffmpeg
 ```
 
@@ -65,7 +63,6 @@ print("\nInstalling system packages for COLMAP...\n")
 Next, clone the Hierarchical Localization repository and install its dependencies with these commands:
 
 ```python
-print("\nCloning HLOC and installing dependencies...\n")
 !git clone --quiet --recursive https://github.com/cvg/Hierarchical-Localization/
 %cd Hierarchical-Localization
 !pip install --quiet -e .
@@ -77,7 +74,7 @@ print("\nCloning HLOC and installing dependencies...\n")
 Ensure you are in the root directory before proceeding to the next step.
 
 ```python
-%cd /content
+%cd ../
 ```
 
 ### Step 5: Cloning Gaussian Splatting
