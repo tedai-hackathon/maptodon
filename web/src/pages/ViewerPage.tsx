@@ -7,23 +7,28 @@ export const ViewerPage: FC = () => {
   const { sessionId } = useParams();
   const viewerElement = useRef<HTMLDivElement>(null);
 
-  // useEffect(() => {
-  //   const cameraUp = [0, -1, -1.0];
-  //   const initialCameraPos = [-3.3816, 1.96931, -1.7189];
-  //   const initialCameraLookAt = [0.6091, 1.42099, 2.02511];
-  //   const viewer = new GaussianSplat3D.Viewer(
-  //     viewerElement.current as any,
-  //     cameraUp,
-  //     initialCameraPos,
-  //     initialCameraLookAt
-  //   );
-  //   viewer.init();
-  //   viewer
-  //     .loadFile(`http://localhost:3000/splat/${sessionId}.splat`)
-  //     .then(() => {
-  //       viewer.start();
-  //     });
-  // }, [sessionId]);
+  useEffect(() => {
+    let stillMounted = true;
+    const viewer = new GaussianSplat3D.Viewer(
+      viewerElement.current as any,
+      [0, -1, -0.17],
+      [-5, -1, -1],
+      [1, 1, 0],
+      null,
+      10
+    );
+    viewer.init();
+    viewer.loadFile(`/api/splat/${sessionId}.splat`).then(() => {
+      if (!stillMounted) return;
+      viewer.start();
+    });
 
-  return <div ref={viewerElement} />;
+    return () => {
+      stillMounted = false;
+      viewer.loadingSpinner?.hide();
+      viewer.stop();
+    };
+  }, []);
+
+  return <div style={{ height: "100%", width: "100%" }} ref={viewerElement} />;
 };

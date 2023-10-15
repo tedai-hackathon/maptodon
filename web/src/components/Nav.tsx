@@ -21,7 +21,10 @@ import {
   ModalContent,
   ModalHeader,
   ModalOverlay,
+  Link,
 } from "@chakra-ui/react";
+import { Link as RouterLink } from "react-router-dom";
+
 import {
   HamburgerIcon,
   CloseIcon,
@@ -71,13 +74,15 @@ export const Nav: FC = () => {
             />
           </Flex>
           <Flex flex={{ base: 1 }} justify={{ base: "center", md: "start" }}>
-            <Text
+            <Link
+              as={RouterLink}
+              to="/"
               textAlign={useBreakpointValue({ base: "center", md: "left" })}
               fontFamily={"heading"}
               color={useColorModeValue("gray.800", "white")}
             >
               Maptodon
-            </Text>
+            </Link>
 
             <Flex display={{ base: "none", md: "flex" }} ml={10}>
               <DesktopNav />
