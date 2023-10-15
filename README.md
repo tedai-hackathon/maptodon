@@ -17,6 +17,10 @@ maptodon is an open-source ecosystem that enables individuals and communities to
 - **Interactive 3D Maps:** Explore detailed, community-generated maps.
 - **Self-Hosting:** Host your 3D maps, control over your data.
 
+### Web Backend [`/api`](/api)
+- Reads SQLite file in and returns the result to web frontend.
+- Enables WebGPU usage
+
 ### AI Pipeline [`/ai`](/ai)
 - **Detailed 3D Data Generation:** Transform images into detailed 3D data with the power of AI.
 - **Open and Accessible:** An open-source AI solution, customizable and accessible to all.
