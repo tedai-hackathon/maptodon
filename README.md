@@ -6,4 +6,4 @@ This project contains the pipeline for performing 3D reconstruction using [Hiera
 
 Click the badge below to open the notebook in Google Colab:
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/tedai-hackathon/maptodonblob/masaishi/pipeline_notebook.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/tedai-hackathon/maptodonblob/main/AI_pipeline/pipeline_notebook.ipynb)
