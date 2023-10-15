@@ -1,0 +1,640 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7C116DFD2ADB22A8009B5653 /* maptodon_iosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C116DFC2ADB22A8009B5653 /* maptodon_iosApp.swift */; };
+		7C116DFF2ADB22A8009B5653 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C116DFE2ADB22A8009B5653 /* ContentView.swift */; };
+		7C116E012ADB22AC009B5653 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C116E002ADB22AC009B5653 /* Assets.xcassets */; };
+		7C116E042ADB22AC009B5653 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C116E032ADB22AC009B5653 /* Preview Assets.xcassets */; };
+		7C116E0E2ADB22AC009B5653 /* maptodon_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C116E0D2ADB22AC009B5653 /* maptodon_iosTests.swift */; };
+		7C116E182ADB22AC009B5653 /* maptodon_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C116E172ADB22AC009B5653 /* maptodon_iosUITests.swift */; };
+		7C116E1A2ADB22AC009B5653 /* maptodon_iosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C116E192ADB22AC009B5653 /* maptodon_iosUITestsLaunchTests.swift */; };
+		7C116E282ADB27E8009B5653 /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 7C116E272ADB27E8009B5653 /* SQLite */; };
+		7C116E2A2ADB2EE8009B5653 /* Frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C116E292ADB2EE8009B5653 /* Frame.swift */; };
+		7C116E2C2ADB47E2009B5653 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C116E2B2ADB47E1009B5653 /* Location.swift */; };
+		7C116E2E2ADB4860009B5653 /* Motion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C116E2D2ADB485F009B5653 /* Motion.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7C116E0A2ADB22AC009B5653 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7C116DF12ADB22A7009B5653 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7C116DF82ADB22A8009B5653;
+			remoteInfo = "maptodon-ios";
+		};
+		7C116E142ADB22AC009B5653 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7C116DF12ADB22A7009B5653 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7C116DF82ADB22A8009B5653;
+			remoteInfo = "maptodon-ios";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7C116DF92ADB22A8009B5653 /* maptodon-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "maptodon-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C116DFC2ADB22A8009B5653 /* maptodon_iosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = maptodon_iosApp.swift; sourceTree = "<group>"; };
+		7C116DFE2ADB22A8009B5653 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7C116E002ADB22AC009B5653 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7C116E032ADB22AC009B5653 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7C116E092ADB22AC009B5653 /* maptodon-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "maptodon-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C116E0D2ADB22AC009B5653 /* maptodon_iosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = maptodon_iosTests.swift; sourceTree = "<group>"; };
+		7C116E132ADB22AC009B5653 /* maptodon-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "maptodon-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C116E172ADB22AC009B5653 /* maptodon_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = maptodon_iosUITests.swift; sourceTree = "<group>"; };
+		7C116E192ADB22AC009B5653 /* maptodon_iosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = maptodon_iosUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7C116E292ADB2EE8009B5653 /* Frame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Frame.swift; sourceTree = "<group>"; };
+		7C116E2B2ADB47E1009B5653 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		7C116E2D2ADB485F009B5653 /* Motion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Motion.swift; sourceTree = "<group>"; };
+		7C116E2F2ADB5FE3009B5653 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7C116DF62ADB22A8009B5653 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C116E282ADB27E8009B5653 /* SQLite in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C116E062ADB22AC009B5653 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C116E102ADB22AC009B5653 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7C116DF02ADB22A7009B5653 = {
+			isa = PBXGroup;
+			children = (
+				7C116DFB2ADB22A8009B5653 /* maptodon-ios */,
+				7C116E0C2ADB22AC009B5653 /* maptodon-iosTests */,
+				7C116E162ADB22AC009B5653 /* maptodon-iosUITests */,
+				7C116DFA2ADB22A8009B5653 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7C116DFA2ADB22A8009B5653 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7C116DF92ADB22A8009B5653 /* maptodon-ios.app */,
+				7C116E092ADB22AC009B5653 /* maptodon-iosTests.xctest */,
+				7C116E132ADB22AC009B5653 /* maptodon-iosUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7C116DFB2ADB22A8009B5653 /* maptodon-ios */ = {
+			isa = PBXGroup;
+			children = (
+				7C116E2F2ADB5FE3009B5653 /* Info.plist */,
+				7C116DFC2ADB22A8009B5653 /* maptodon_iosApp.swift */,
+				7C116DFE2ADB22A8009B5653 /* ContentView.swift */,
+				7C116E292ADB2EE8009B5653 /* Frame.swift */,
+				7C116E2D2ADB485F009B5653 /* Motion.swift */,
+				7C116E2B2ADB47E1009B5653 /* Location.swift */,
+				7C116E002ADB22AC009B5653 /* Assets.xcassets */,
+				7C116E022ADB22AC009B5653 /* Preview Content */,
+			);
+			path = "maptodon-ios";
+			sourceTree = "<group>";
+		};
+		7C116E022ADB22AC009B5653 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				7C116E032ADB22AC009B5653 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7C116E0C2ADB22AC009B5653 /* maptodon-iosTests */ = {
+			isa = PBXGroup;
+			children = (
+				7C116E0D2ADB22AC009B5653 /* maptodon_iosTests.swift */,
+			);
+			path = "maptodon-iosTests";
+			sourceTree = "<group>";
+		};
+		7C116E162ADB22AC009B5653 /* maptodon-iosUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7C116E172ADB22AC009B5653 /* maptodon_iosUITests.swift */,
+				7C116E192ADB22AC009B5653 /* maptodon_iosUITestsLaunchTests.swift */,
+			);
+			path = "maptodon-iosUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7C116DF82ADB22A8009B5653 /* maptodon-ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7C116E1D2ADB22AC009B5653 /* Build configuration list for PBXNativeTarget "maptodon-ios" */;
+			buildPhases = (
+				7C116DF52ADB22A8009B5653 /* Sources */,
+				7C116DF62ADB22A8009B5653 /* Frameworks */,
+				7C116DF72ADB22A8009B5653 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "maptodon-ios";
+			packageProductDependencies = (
+				7C116E272ADB27E8009B5653 /* SQLite */,
+			);
+			productName = "maptodon-ios";
+			productReference = 7C116DF92ADB22A8009B5653 /* maptodon-ios.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7C116E082ADB22AC009B5653 /* maptodon-iosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7C116E202ADB22AC009B5653 /* Build configuration list for PBXNativeTarget "maptodon-iosTests" */;
+			buildPhases = (
+				7C116E052ADB22AC009B5653 /* Sources */,
+				7C116E062ADB22AC009B5653 /* Frameworks */,
+				7C116E072ADB22AC009B5653 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7C116E0B2ADB22AC009B5653 /* PBXTargetDependency */,
+			);
+			name = "maptodon-iosTests";
+			productName = "maptodon-iosTests";
+			productReference = 7C116E092ADB22AC009B5653 /* maptodon-iosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7C116E122ADB22AC009B5653 /* maptodon-iosUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7C116E232ADB22AC009B5653 /* Build configuration list for PBXNativeTarget "maptodon-iosUITests" */;
+			buildPhases = (
+				7C116E0F2ADB22AC009B5653 /* Sources */,
+				7C116E102ADB22AC009B5653 /* Frameworks */,
+				7C116E112ADB22AC009B5653 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7C116E152ADB22AC009B5653 /* PBXTargetDependency */,
+			);
+			name = "maptodon-iosUITests";
+			productName = "maptodon-iosUITests";
+			productReference = 7C116E132ADB22AC009B5653 /* maptodon-iosUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7C116DF12ADB22A7009B5653 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					7C116DF82ADB22A8009B5653 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					7C116E082ADB22AC009B5653 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 7C116DF82ADB22A8009B5653;
+					};
+					7C116E122ADB22AC009B5653 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 7C116DF82ADB22A8009B5653;
+					};
+				};
+			};
+			buildConfigurationList = 7C116DF42ADB22A7009B5653 /* Build configuration list for PBXProject "maptodon-ios" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7C116DF02ADB22A7009B5653;
+			packageReferences = (
+				7C116E262ADB27E8009B5653 /* XCRemoteSwiftPackageReference "SQLite" */,
+			);
+			productRefGroup = 7C116DFA2ADB22A8009B5653 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7C116DF82ADB22A8009B5653 /* maptodon-ios */,
+				7C116E082ADB22AC009B5653 /* maptodon-iosTests */,
+				7C116E122ADB22AC009B5653 /* maptodon-iosUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7C116DF72ADB22A8009B5653 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C116E042ADB22AC009B5653 /* Preview Assets.xcassets in Resources */,
+				7C116E012ADB22AC009B5653 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C116E072ADB22AC009B5653 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C116E112ADB22AC009B5653 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7C116DF52ADB22A8009B5653 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C116E2A2ADB2EE8009B5653 /* Frame.swift in Sources */,
+				7C116DFF2ADB22A8009B5653 /* ContentView.swift in Sources */,
+				7C116E2C2ADB47E2009B5653 /* Location.swift in Sources */,
+				7C116E2E2ADB4860009B5653 /* Motion.swift in Sources */,
+				7C116DFD2ADB22A8009B5653 /* maptodon_iosApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C116E052ADB22AC009B5653 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C116E0E2ADB22AC009B5653 /* maptodon_iosTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C116E0F2ADB22AC009B5653 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C116E1A2ADB22AC009B5653 /* maptodon_iosUITestsLaunchTests.swift in Sources */,
+				7C116E182ADB22AC009B5653 /* maptodon_iosUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7C116E0B2ADB22AC009B5653 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7C116DF82ADB22A8009B5653 /* maptodon-ios */;
+			targetProxy = 7C116E0A2ADB22AC009B5653 /* PBXContainerItemProxy */;
+		};
+		7C116E152ADB22AC009B5653 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7C116DF82ADB22A8009B5653 /* maptodon-ios */;
+			targetProxy = 7C116E142ADB22AC009B5653 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		7C116E1B2ADB22AC009B5653 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7C116E1C2ADB22AC009B5653 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7C116E1E2ADB22AC009B5653 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"maptodon-ios/Preview Content\"";
+				DEVELOPMENT_TEAM = 47JGA6NAP2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "maptodon-ios/Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera access required";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "GPS access required";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "t2.ted-ai.maptodon-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7C116E1F2ADB22AC009B5653 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"maptodon-ios/Preview Content\"";
+				DEVELOPMENT_TEAM = 47JGA6NAP2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "maptodon-ios/Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera access required";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "GPS access required";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "t2.ted-ai.maptodon-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7C116E212ADB22AC009B5653 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 47JGA6NAP2;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "t2.ted-ai.maptodon-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/maptodon-ios.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/maptodon-ios";
+			};
+			name = Debug;
+		};
+		7C116E222ADB22AC009B5653 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 47JGA6NAP2;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "t2.ted-ai.maptodon-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/maptodon-ios.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/maptodon-ios";
+			};
+			name = Release;
+		};
+		7C116E242ADB22AC009B5653 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 47JGA6NAP2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "t2.ted-ai.maptodon-iosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "maptodon-ios";
+			};
+			name = Debug;
+		};
+		7C116E252ADB22AC009B5653 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 47JGA6NAP2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "t2.ted-ai.maptodon-iosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "maptodon-ios";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7C116DF42ADB22A7009B5653 /* Build configuration list for PBXProject "maptodon-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C116E1B2ADB22AC009B5653 /* Debug */,
+				7C116E1C2ADB22AC009B5653 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7C116E1D2ADB22AC009B5653 /* Build configuration list for PBXNativeTarget "maptodon-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C116E1E2ADB22AC009B5653 /* Debug */,
+				7C116E1F2ADB22AC009B5653 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7C116E202ADB22AC009B5653 /* Build configuration list for PBXNativeTarget "maptodon-iosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C116E212ADB22AC009B5653 /* Debug */,
+				7C116E222ADB22AC009B5653 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7C116E232ADB22AC009B5653 /* Build configuration list for PBXNativeTarget "maptodon-iosUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C116E242ADB22AC009B5653 /* Debug */,
+				7C116E252ADB22AC009B5653 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7C116E262ADB27E8009B5653 /* XCRemoteSwiftPackageReference "SQLite" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/stephencelis/SQLite.swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.14.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7C116E272ADB27E8009B5653 /* SQLite */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7C116E262ADB27E8009B5653 /* XCRemoteSwiftPackageReference "SQLite" */;
+			productName = SQLite;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 7C116DF12ADB22A7009B5653 /* Project object */;
+}
