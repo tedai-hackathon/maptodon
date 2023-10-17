@@ -2,6 +2,8 @@
 
 maptodon is an open-source ecosystem that enables individuals and communities to easily create, update, and view detailed, 3D maps. Utilizing an iOS app for efficient scanning, a sophisticated AI pipeline for 3D data generation, and a user-friendly web app for viewing, maptodon is at the forefront of democratizing 3D mapping.
 
+https://github.com/tedai-hackathon/maptodon/assets/1396267/0c37a500-c5b6-48e0-8bc4-8f724ee6575b
+
 ## Features
 - **Community-Driven:** Everyone can contribute by scanning their surroundings.
 - **Decentralized:** Built on a decentralized architecture ensuring data integrity and accessibility.
