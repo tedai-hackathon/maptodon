@@ -12,6 +12,10 @@ https://github.com/tedai-hackathon/maptodon/assets/1396267/0c37a500-c5b6-48e0-8b
 - **Decentralized:** Built on a decentralized architecture ensuring data integrity and accessibility.
 - **Open Source:** Transparent, modifiable and freely accessible source code.
 
+## Presentation
+
+View the [maptodon presentation](https://speakerdeck.com/shiblumi/maptodon-presentation) on Speaker Deck to get an in-depth overview of the project and its features.
+
 ## Apps
 
 ### iOS App [`/maptodon-ios`](/maptodon-ios)
@@ -29,7 +33,6 @@ https://github.com/tedai-hackathon/maptodon/assets/1396267/0c37a500-c5b6-48e0-8b
 ### AI Pipeline [`/ai`](/ai)
 - **Detailed 3D Data Generation:** Transform images into detailed 3D data with the power of AI.
 - **Open and Accessible:** An open-source AI solution, customizable and accessible to all.
-
 
 ## Contributions
 
